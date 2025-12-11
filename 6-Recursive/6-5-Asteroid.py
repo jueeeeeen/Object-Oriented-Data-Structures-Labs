@@ -1,4 +1,4 @@
-def asteroid_collision(asts, i=1):
+def asteroid_collision(asts, i = 1):
     if i == len(asts):
         return asts
     else:
@@ -13,8 +13,8 @@ def asteroid_collision(asts, i=1):
             return asteroid_collision(asts, i-1)
         else:
             return asteroid_collision(asts, i+1)
-
+                
 
 x = input("Enter Input : ").split(",")
-x = list(map(int, x))
+x = list(map(int,x))
 print(asteroid_collision(x))

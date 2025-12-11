@@ -66,9 +66,6 @@ class LinkedList:
         if index < self.size()*-1:
             self.addHead(data)
             return
-        elif index >= self.size():
-            index = self.size()
-            print(index)
             
         while index < 0:
             index += self.size()
@@ -83,7 +80,6 @@ class LinkedList:
                 return
             q = q.next
             count += 1
-        
         
 
     def search(self, data):
